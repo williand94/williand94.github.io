@@ -1,0 +1,500 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fuzzy Bubbles', cursive;
+    scroll-behavior: smooth;
+}
+
+body {}
+
+/*Index2*/
+.banner {
+    background: url("../image/mexclador.jpg")center/cover;
+    height: 700px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #dcc514;
+    opacity: 0.30;
+}
+
+.banner__info {
+    padding: 0.3em;
+    position: absolute;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    color: beige;
+    margin: auto;
+}
+
+.banner__title {
+    line-height: 1.5;
+    font-size: 6em;
+    font-family: serif;
+    color: rgb(139, 69, 0);
+}
+
+.banner__p {
+    line-height: 2;
+    font-size: 1em;
+    font-family: sans-serif;
+}
+
+/*
+#numero1 {
+    color: blueviolet;
+}
+
+#numero1 {
+    background: blue;
+}
+
+.miclase {
+    background: pink;
+}
+
+*/
+
+/*.video video {
+    width: 300px;
+    height: 400px;
+
+}*/
+
+/*Estilos de la pagina index(video)*/
+
+/*Redes*/
+.nav__redes {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    margin: 0 auto;
+
+}
+.link__redes{
+    color: #FFF;
+}
+
+.fa-brands {
+    margin-left: 2.5rem;
+}
+
+/*Header*/
+.cj {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tamanno{
+    height: 40vh;
+
+}
+/*Menu de navegacion*/
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav .logo {
+    width: 10rem;
+    height: 10rem;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 4rem;
+}
+
+.cta {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.3rem;
+}
+.fa-whatsapp {
+    font-size: 1.8rem;
+    color: #25D366;
+}
+
+.slogan {
+    margin: 0 auto;
+    text-align: center;
+    color: #FFF;
+}
+
+.slogan h1 {
+    font-size: 8rem;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.slogan h1:hover {
+    -webkit-text-stroke: 2px #FFF;
+    color: transparent;
+}
+
+.slogan a {
+    color: #FFF;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    border: 2px solid #FFF;
+    padding: 1rem 5rem;
+    border-radius: 2.5rem;
+
+}
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .back-video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+/*Audio*/
+
+/**/
+.bienvenida__text {
+    background-color: crimson;
+    padding: 3rem;
+}
+
+.bienvenida {
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-weight: 700;
+}
+
+/*Código de la sesión*/
+.informacion {
+    color: #FFF;
+    background-image: url(../image/bg-1.jpg);
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.infor__text {
+    position: relative;
+    top: 35%;
+    left: 1rem;
+}
+
+.infor__titulo {
+    font-size: 3.5rem;
+}
+
+.cta__link {
+    width: 20rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    display: inline-block;
+    border-radius: 2rem;
+    background-color: goldenrod;
+    padding: 1rem;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    transition: .5s ease;
+}
+
+.cta__negro {
+    background-color: black;
+    width: 12rem;
+    color: goldenrod;
+
+}
+
+.cta__link:hover {
+    background-color: white;
+}
+
+.cta__negro:hover {
+    background-color: #635f5f;
+
+}
+
+.redes {
+    margin: 1rem;
+}
+
+.redes .red {
+    font-size: 2rem;
+    color: red;
+}
+
+.redes .azul {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: rgb(0, 113, 219);
+}
+
+.redes .mix {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: rgb(255, 0, 0);
+}
+
+.redes .verde {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: rgb(0, 219, 11);
+}
+
+.aux {
+    position: absolute;
+}
+
+.imr {
+    margin-bottom: -50%;
+}
+
+/*Promoción Estilos*/
+.promocion {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 15rem;
+    background-color: crimson;
+}
+.mt{
+    margin-top: .3rem;
+}
+
+.fa-gift{
+    font-size: 2rem;
+}
+
+.beats .cta__link {
+    position: relative;
+    top: 35%;
+    left: 25rem;
+}
+
+.p {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.imr {
+    margin: 5rem;
+}
+
+/* Estilos de la tabla de beats y la sesión beats */
+.beats {
+    width: 100%;
+    background-color: #191919;
+    color: #FFF;
+}
+
+.beats__tabla {
+    width: 85%;
+    margin: 3rem auto;
+}
+
+.beats__encabezados {
+    background-color: goldenrod;
+    border-radius: 1rem;
+    width: 100%;
+    color: black;
+}
+
+.item {
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.size {
+    width: 25%;
+}
+
+.encabezado {
+    text-align: center;
+    width: 25%;
+}
+
+.audio {
+    width: 118px;
+}
+
+.titulo__beat,
+.titulo__productor {
+    font-size: .8rem;
+}
+
+.titulo {
+    display: flex;
+    gap: 1rem;
+}
+
+.titulo__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo__img {
+    width: 50px;
+    height: 50px;
+}
+
+.tempo__beat,
+.genero__beat {
+    text-align: center;
+    width: 100%;
+}
+
+.comprar {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+/* Servicios */
+.servicios{
+    background-color: #ffc000f2;
+
+    height: auto;
+    padding: .1px;
+}
+.servicios__text{
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 3rem;
+}
+.servicios__parrafo{
+    text-align: center;
+}
+
+.servicios__card{
+    width: 80%;
+    margin: 3rem auto;
+
+}
+.servicios__card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card{
+    text-align: center;
+    width: 20rem;
+    height: 22rem;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    background-color: rgba(218, 165, 32, 0.39);
+}
+
+.card__title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.linea{
+    width: 2.5rem;
+    margin: .5rem auto;
+}
+
+/* Footer */
+.footer{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40vh;
+    background-color: #191919;
+}
+
+.footer__text{
+    color: #FFF;
+    font-weight: bold;
+}
+
+.pagos{
+    display: flex;
+    align-items: center;
+}
+.mg{
+    margin-left: 1rem;
+}
+span{
+    color: #FFF;
+}
+
+.wpp{
+    color: green;
+    font-size: 2rem;
+}
+.fa-lock{
+    color: aqua;
+    font-size: 2rem;
+}
+
+/*Nosotros*/
+.nosotros {
+    margin: 3rem auto;
+    width: 90%;
+    height: 30rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nosotros img{
+    width: 50%;
+    height: 100%;
+    
+}
+
+.nosotros__text {
+    width: 50%; 
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.nosotros__titulo {
+    margin-bottom: 1.5rem; 
+}
